@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
-import TodosContext from "../contexts/Todos.js";
+import { TodosContext } from "../contexts/Todos.js";
 
 const TodosControls = () => {
   const { todos, setTodos } = useContext(TodosContext);
 
   const operateOnTodo = (todo, operation) => {
-    const newTodo = {...todo, length: operation === 'add' ? todo.length + 1 : todo.length - 1};
+    const newTodo = {...todo, quantity: operation === 'add' ? todo.quantity + 1 : todo.quantity - 1};
     setTodos(todos.map(todo => {
       if(todo.id === newTodo.id) return newTodo;
       return todo;

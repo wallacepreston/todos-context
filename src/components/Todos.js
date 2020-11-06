@@ -5,7 +5,7 @@ const Todos = props => {
   
   return (
     <div>
-      <h1>Here are the todos!</h1>
+      <h1>Todos</h1>
       <TodoList />
       <h2>And some controls</h2>
       <TodosControls />
