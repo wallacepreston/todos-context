@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
-import {TodoList, TodosControls} from "./";
+import React from "react";
+import { TodoList, TodosControls } from "./";
 
-const Todos = props => {
+const Todos = () => {
   
   return (
     <div>

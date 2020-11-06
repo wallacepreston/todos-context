@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
+import React from "react";
 import {UserList, UsersControls} from "./";
 
-const Users = props => {
+const Users = () => {
   
   return (
     <div>

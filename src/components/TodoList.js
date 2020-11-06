@@ -3,8 +3,8 @@ import { TodosContext } from "../contexts/Todos.js";
 import UsersContext from "../contexts/Users.js";
 
 const TodoList = () => {
-  const { todos, setTodos } = useContext(TodosContext);
-  const { selectedUser, setSelectedUserId, users, setUsers } = useContext(UsersContext);
+  const { todos } = useContext(TodosContext);
+  const { selectedUser, users, setUsers } = useContext(UsersContext);
 
   const assignToUser = todo => {
     const newUser = {...selectedUser};
@@ -21,7 +21,7 @@ const TodoList = () => {
       {todos.map(todo => (
         <div key={todo.id}>
           <b>{todo.name}:</b> do {todo.quantity} times 
-            {selectedUser && <button onClick={() => assignToUser(todo)}>Assign to user {selectedUser.name}</button>}
+          {selectedUser && <button onClick={() => assignToUser(todo)}>Assign to user {selectedUser.name}</button>}
         </div>
       ))}
     </>
