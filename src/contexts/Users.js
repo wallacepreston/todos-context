@@ -4,13 +4,13 @@ const UsersContext = React.createContext({
   users: [],
   selectedUserId: {},
   setSelectedUserId: () => {}, // placeholder.  Could put anything here, but initializing with function so stay consistent
-  setUsers: () => {} // placeholder.  Could put anything here, but initializing with function so stay consistent
+  setUsers: () => {} // placeholder.
 });
 
 export const UsersProvider = props => {
   const [users, setUsers] = useState([]);
   const [selectedUserId, setSelectedUserId] = useState({});
-  const selectedUser = users.find(user => user.id === selectedUserId);
+  const selectedUser = users.find(user => user.id === selectedUserId); // computed state
 
   // mimick an API call
   useEffect(() => {
@@ -28,7 +28,7 @@ export const UsersProvider = props => {
     value={{
       selectedUser,
       selectedUserId,
-      setSelectedUserId, // using the `setUsers` function we created from the `useState` hook above.
+      setSelectedUserId,
       users,
       setUsers // using the `setUsers` function we created from the `useState` hook above.
     }}

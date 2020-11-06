@@ -6,7 +6,6 @@ export const TodosContext = React.createContext({
   setTodos: () => {} // placeholder.  Could put anything here, but initializing with function so stay consistent
 });
 
-
 // the context provider is simply a component. When we pass the other components as children, it "provides" the state/data necessary to the components
 const TodosProvider = props => {
   const [todos, setTodos] = useState([]);
