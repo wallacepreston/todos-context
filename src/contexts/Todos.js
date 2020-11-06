@@ -16,11 +16,11 @@ const TodosProvider = props => {
     // this is where a fetch would go to fetch todos, then set the todos
     setTodos(
       [
-        { id: 1, name: "task 1", quantity: 5 },
-        { id: 2, name: "task 2", quantity: 2 },
-        { id: 3, name: "task 3", quantity: 6 },
-        { id: 4, name: "task 4", quantity: 10 },
-        { id: 5, name: "task 5", quantity: 1 }
+        { id: 1, name: "walk dog", quantity: 5 },
+        { id: 2, name: "go shopping", quantity: 1 },
+        { id: 3, name: "mow lawn", quantity: 3 },
+        { id: 4, name: "call Mom", quantity: 1 },
+        { id: 5, name: "buy new computer", quantity: 2 }
       ]
     );
     

@@ -17,7 +17,7 @@ const UserList = () => {
           }
           {
             todosCount
-              ? <> has {todosCount} todo{todosCount ? 's' : ''}</>
+              ? <> has {todosCount} todo{todosCount > 1 ? 's' : ''}</>
               : ''
           }
         </div>

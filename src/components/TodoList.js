@@ -20,7 +20,7 @@ const TodoList = () => {
     <>
       {todos.map(todo => (
         <div key={todo.id}>
-          <b>{todo.name}:</b> do {todo.quantity} times 
+          <b>{todo.name}:</b> do {todo.quantity} x
           {selectedUser && <button onClick={() => assignToUser(todo)}>Assign to user {selectedUser.name}</button>}
         </div>
       ))}
