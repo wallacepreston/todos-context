@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { TodosContext } from "../contexts/Todos.js";
-import UsersContext from "../contexts/Users.js";
+import { UsersContext } from "../contexts/Users.js";
 
 const TodoList = () => {
   const { todos } = useContext(TodosContext);

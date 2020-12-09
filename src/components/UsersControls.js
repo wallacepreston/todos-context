@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import UsersContext from "../contexts/Users.js";
+import { UsersContext } from "../contexts/Users.js";
 
 const UsersControls = () => {
   const { users, setSelectedUserId } = useContext(UsersContext);

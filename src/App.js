@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import TodosProvider from "./contexts/Todos.js";
-import { UsersProvider } from "./contexts/Users.js";
+import UsersProvider from "./contexts/Users.js";
 import {
   Todos,
   Users,
